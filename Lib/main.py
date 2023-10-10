@@ -1,16 +1,10 @@
-from colorama import Fore, Style
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
 
-def neotext(text1, text2, text3):
-    formatted_text1 = f"{Fore.LIGHTBLACK_EX}\"{text1}"
-    formatted_text2 = f"{text2}\"{Style.RESET_ALL}"
-    formatted_text3 = f"{Fore.YELLOW}{text3}{Style.RESET_ALL}"
+def diapason(num1, num2):
+    for i in range(num1 + 1, num2):
+        if i % 2 != 0:
+            print(i)
 
-    formatted_text = f"{formatted_text1}\n{formatted_text2}\n{formatted_text3}"
-    return formatted_text
 
-text1 = "Don't let the noise of others' opinions"
-text2 = "drown out your own inner voice."
-text3 = "Steve Jobs"
-
-formatted_text = neotext(text1, text2, text3)
-print(formatted_text)
+diapason(num1, num2)
